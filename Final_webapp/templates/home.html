@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Plagiarism Detection Web App</title>
+        <meta charset="utf-8">
+        <meta name="viewport"  content="width=device-width, initial-scale=1">
+        
+</head>
+    <body>
+
+     <form action="/external/" method="post">
+    	{% csrf_token %}                
+     	What is inheritance in Object-Oriented Programming?<br><br>
+
+     	<textarea type="text" name="input_text" rows="8" cols="80" required>Please answer to the best of your ability.</textarea>
+     	{{data_external}}<br><br>
+
+     	Explain the PageRank algorthim that used by the Google Search Engine.<br><br>
+
+     	<textarea type="text" name="input_text_2" rows="8" cols="80" required>Please answer to the best of your ability.</textarea>
+     	{{data_external}}<br><br>
+		
+		Explain the Vector Space model that is used in Information Retrieval.<br><br>
+
+     	<textarea type="text" name="input_text_3" rows="8" cols="80" required>Please answer to the best of your ability.</textarea>
+     	{{data_external}}<br><br>
+
+     	Explain Bayes Theorem in probability theory.<br><br>
+
+     	<textarea type="text" name="input_text_4" rows="8" cols="80" required>Please answer to the best of your ability.</textarea>
+     	{{data_external}}<br><br>
+
+     	What is dynamic programming?<br><br>
+
+     	<textarea type="text" name="input_text_5" rows="8" cols="80" required>Please answer to the best of your ability.</textarea>
+     	{{data_external}}<br><br>
+
+     	<button onclick="location.href= '{% url 'script' %}' ">Submit</button><hr>
+		Results: {{results_text}}
+
+     </form>
+
+
+     </body>
+</html>

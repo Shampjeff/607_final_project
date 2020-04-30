@@ -1,0 +1,11 @@
+TODO:
+
+4/30
+
+
+Data Exploration could be better
+
+
+
+Host on Github Pages for live prediction
+
