@@ -177,9 +177,7 @@ out.to_csv(test_file,header = None, index = None)
 
 endpoint_name= 'gbm-endpoint-607'
 client = boto3.Session().client('sagemaker-runtime', 
-                        region_name='us-east-2',
-                        aws_access_key_id="AKIA4XYZ75HJADVIJYT5",
-                        aws_secret_access_key="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")
+                        region_name='us-east-2')
 response = client.invoke_endpoint(
     EndpointName= endpoint_name,
     Body= test_file.getvalue(),
