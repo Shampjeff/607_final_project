@@ -1,6 +1,10 @@
-# This is the main prediction engine for the deployed model in AWS. This file takes inputs from the web app and computes the needed dataframe values (containment and lcs score). It takes the calculated dataframe and passes the numbers to an AWS model endpoint. Once a response has been returned this file post-processes the result for display on the web app
+# This is the main prediction engine for the deployed model in AWS. This file takes inputs from the web app and 
+# computes the needed dataframe values (containment and lcs score). It takes the calculated dataframe and passes the 
+# numbers to an AWS model endpoint. Once a response has been returned this file post-processes the result for
+# display on the web app
 
-#Currently, the response from the model is not rendered beautifully in html, but this was hard enough for me to get running but it works locally!
+# Currently, the response from the model is not rendered beautifully in html, but this was hard enough for me to 
+# get running but it works locally!
 
 
 import pandas as pd
@@ -175,6 +179,7 @@ client = boto3.Session().client('sagemaker-runtime',
                         region_name='us-east-2')
 response = client.invoke_endpoint(
     EndpointName= endpoint_name,
+    # AWS Access Keys Here
     Body= test_file.getvalue(),
     ContentType = 'text/csv')
 result = json.loads(response['Body'].read().decode())

@@ -24,7 +24,12 @@ This notebook is meant to be used inside a SageMaker notebook instance. The crea
 ### `prediction_engine.py`
 This is the prediction engine for use on the web application. This file handles the pre-processing of strings sent via the web app and sends the results to the SageMaker endpoint. Results from the endpoint are post-processed and sent back to the web app for end-user feedback. 
 
+
 ## Web Application
 `Final_webapp` is a directory that houses the necessary files to run a Django web app with python. The web app sends input data to the endpoint and returns the results for the end-user to see. 
 
 Many of the files in `Final_webapp` are generated automatically by Django. The files; `home.html`, `views.py`, and `urls.py` were built for the project and are used for the tranmission of data to the endpoint. 
+
+
+## `Final Thoughts.md`
+This is a markdown file with a summary of things I learned from this process and some key take aways I had as a result of this completing this final project. 

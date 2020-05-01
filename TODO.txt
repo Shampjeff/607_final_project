@@ -1,11 +1,15 @@
 TODO:
 
-4/30
+5/1
 
+Make Presentation
 
-Data Exploration could be better
+Helpful cmd's for running things
 
+1) Django webapp locally:
+ 
+python manage.py runserver 127.0.0.1:8002
 
+2) Test prediction engine file
 
-Host on Github Pages for live prediction
-
+python prediction_engine.py "No one really knows what this is, we all just do it and shut up about it. the mark of a noob is the someone who brags about it." "pagerank is a link analysis algorithm used by the google internet search engine that assigns a numerical weighting to each element of a hyperlinked set of documents such as the world wide web with the purpose of measuring its relative importance within the set the algorithm may be applied to any collection of entities with reciprocal quotations and references the numerical weight that it assigns to any given element" "It's like how vector make up a space of numbers of a given set. That space can used for math operations that we all know and love." "The prior probability informs the posterior distribution. Basically, previous knoewledge can be used to predict future results." "I have no clue, but this guy in 602 brags about it all the time. It's really annoying so I hate dynamic programming now because of him." "source_a" "source_b" "source_c" "source_d" "source_e"

@@ -20,7 +20,8 @@ def external(request):
 	input_text_5=request.POST.get("input_text_5")
 
 	out = run([sys.executable,
-	 "//Users//jeffshamp//Documents//607_final_project//prediction_engine.py",
+	 #"//Users//jeffshamp//Documents//607_final_project//prediction_engine.py",
+     "..//..//prediction_engine.py",
 	  input_text, input_text_2, input_text_3, input_text_4, input_text_5,
 	  "source_a", "source_b", "source_c","source_d","source_e"],
 	 shell=False, 
