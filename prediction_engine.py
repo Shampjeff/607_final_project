@@ -177,8 +177,7 @@ out.to_csv(test_file,header = None, index = None)
 
 endpoint_name= 'gbm-endpoint-607'
 client = boto3.Session().client('sagemaker-runtime', 
-                        region_name='us-east-2',)
-                        
+                        region_name='us-east-2')
 response = client.invoke_endpoint(
     EndpointName= endpoint_name,
     Body= test_file.getvalue(),
