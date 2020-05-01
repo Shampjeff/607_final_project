@@ -1,11 +1,6 @@
-# This is the main prediction engine for the deployed model in AWS. this file takes inputs from the web app and computes 
-# the needed dataframe values( containment and lcs score. It takes the calculated dataframe and passes the numbers to 
-# AWS model endpoint. Once a response has been returned from this file post-processes the result for display on the web app
+# This is the main prediction engine for the deployed model in AWS. This file takes inputs from the web app and computes the needed dataframe values (containment and lcs score). It takes the calculated dataframe and passes the numbers to an AWS model endpoint. Once a response has been returned this file post-processes the result for display on the web app
 
-#Currently, the response from the model is not rendered beautifully in html, but this was hard enough for me to get running
-# spend more time to make a beautiful web app. Bring on the front-end engineers for that task!
-
-
+#Currently, the response from the model is not rendered beautifully in html, but this was hard enough for me to get running but it works locally!
 
 
 import pandas as pd
