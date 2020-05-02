@@ -3,6 +3,7 @@ The final project for Data 607 in CUNY SPS MSDS
 
 This project spans several `.py` files and `.ipynb` Jupyter notebooks. Using an IDE such as PyCharm or JupyterLab will be helpful in regards to navigating these files with ease. 
 
+I tried to detail in the narrative as well as with comments how and why this code works and seeks to accomplish. This is not a Rpub, but Github does allow for viewing `ipynb` files within the repo. 
 
 ## Summary and of Files
 
@@ -31,5 +32,5 @@ This is the prediction engine for use on the web application. This file handles 
 Many of the files in `Final_webapp` are generated automatically by Django. The files; `home.html`, `views.py`, and `urls.py` were built for the project and are used for the tranmission of data to the endpoint. 
 
 
-## `Final Thoughts.md`
+## `Final_Thoughts.md`
 This is a markdown file with a summary of things I learned from this process and some key take aways I had as a result of this completing this final project. 

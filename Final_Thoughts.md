@@ -14,13 +14,13 @@ I like the unified tools that are available in python for data exploration, mode
 
 
 ## AWS
-This project has kind of soured me on using AWS. It really is the web service mirror of Amazon the retail site. An endless array of products, so many that it's impossible to know them all. Layers and layers and layers of services and protocols to follow for what seems like a simple task. Also every service has pages and pages of documentation, but much of it is so very cryptic that is takes hours to understand and follow. AWS is the giant in this space, but I relly hope that GCP, Databricks, IBM or some other service with a more unified and user-friendly interface will dethrone AWS in the future. I have a few examples below of things that I learned from this project
+This project has kind of soured me on using AWS. It really is the web service mirror of Amazon the retail site. An endless array of products, so many that it's impossible to know them all. Layers and layers and layers of services and protocols to follow for what seems like a simple task. Also every service has pages and pages of documentation, but much of it is so very cryptic that is takes hours to understand and follow. AWS is the giant in this space, but I really hope that GCP, Databricks, IBM or some other service with a more unified and user-friendly interface will dethrone AWS in the future. I have a few examples below of things that I learned from this project
 
 
 ### SageMaker
 This is the AWS flagship ML service. After using it extensively on this project and from another online course, I have come to the conclusion that, while SageMaker has many nice features, it is not actually needed. If you _need_ the computing power then it is much easier to use than EC2, but that's about it. SageMaker is very costly and there are several cheaper, and sometimes easier, products that can accomplish the goals of SageMaker. 
 1. EC2 can launch Jupyter Lab and it uses the same computing resources "under the hood" as SageMaker.
-2. Model endpoints built in Sagemaker are not actually needed. A user can simply make a series of AWS Lambda layers with a final layer that loads a pre-trained model from a pickle file for inference. Lambda is $\frac{1}{10}$ the cost of SageMaker. 
+2. Model endpoints built in Sagemaker are not actually needed. A user can simply make a series of AWS Lambda layers with a final layer that loads a pre-trained model from a pickle file for inference. Lambda is **one-tenth** the cost of SageMaker. 
 3. The secruity configuration for SageMaker and model endpoints is Byzantine at best and this can largely be avoided using other services (see above). 
 
 
