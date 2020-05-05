@@ -4,17 +4,23 @@ author: Jeff Shamp
 date: 5/1/2020
 autosize: true
 
+
+Live Demo
+========================================================
+
+>- Detect Authenticity of Answers
+>- http://127.0.0.1:8002
+
+
 Overview
 ========================================================
 End-to-end data science project culminating in live predictions from a simple web application
 
 - Problem statement
-- Load data and create features
-- Modeling detection
+- Features and modeling
 - Deploy to cloud
 - Launch web application for real-time model feedback
 
-Data and feature creation based on research by:
 > **Citation**: Clough, P. and Stevenson, M. Developing A Corpus of Plagiarised Short Answers, Language Resources and Evaluation: Special Issue on Plagiarism and Authorship Analysis, In Press.
 
 Problem Statement
@@ -26,23 +32,13 @@ Plagiarism is defined by:
 >- Similarity of "answer" text to "source" text.
 >- Source texts are derived from Wikipedia pages for each sample question. 
 
-<br>
-Sample questions:
->- What is inheritance in Object-Oriented Programming?
->- Explain the PageRank algorthim that used by the Google Search Engine.
->- Explain the Vector Space model that is used in Information Retrieval.
->- Explain Bayes Theorem in probability theory.  
->- What is dynamic programming? 
 
 Prediction Features
 ========================================================
-Features from two main sources:
 >- Containment of N-grams
   - $\frac{\sum count(ngram_{ans}) \cap count(ngram_{source})}{\sum count(ngram_{ans})}$
-  - Prune features based on correlation 
 
 >- Longest Common Subsequence
-  - Longest identical chain of words in each answer text
 ![Longest common sequence calculation](img/matrix_rules.png)
 
 Modeling
@@ -81,12 +77,10 @@ Get predictions in real time
 
 >![invoke](img/invoke.png)
 
-Live Demo
+Thank You 
 ========================================================
 
->- Gulp
->- http://127.0.0.1:8002
-
+>- Questions?
 
 
 
