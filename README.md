@@ -29,7 +29,7 @@ This is the prediction engine for use on the web application. This file handles 
 ## Web Application
 `Final_webapp` is a directory that houses the necessary files to run a Django web app with python. The web app sends input data to the endpoint and returns the results for the end-user to see. 
 
-Many of the files in `Final_webapp` are generated automatically by Django. The files; `home.html`, `views.py`, and `urls.py` were built for the project and are used for the tranmission of data to the endpoint. 
+Many of the files in `Final_webapp` are generated automatically by Django. The files; `home.html`, `views.py`, and `urls.py` were built for the project and are used for the transmission of data to the endpoint. 
 
 
 ## `Final_Thoughts.md`
